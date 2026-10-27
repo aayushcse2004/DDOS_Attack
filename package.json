@@ -1,0 +1,27 @@
+{
+  "name": "ddos-detection-mitigation-dashboard",
+  "version": "1.0.0",
+  "description": "Academic Cybersecurity Project: DDoS Attack Detection and Mitigation Dashboard",
+  "scripts": {
+    "dev": "concurrently \"npm.cmd --prefix server run dev\" \"npm.cmd --prefix client run dev\"",
+    "start": "concurrently \"npm.cmd --prefix server run start\" \"npm.cmd --prefix client run dev\"",
+    "server": "npm.cmd --prefix server run dev",
+    "client": "npm.cmd --prefix client run dev",
+    "install:all": "npm.cmd install && npm.cmd --prefix server install && npm.cmd --prefix client install",
+    "build": "npm.cmd --prefix client run build",
+    "test": "npm.cmd --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "cybersecurity",
+    "ddos",
+    "detection",
+    "mitigation",
+    "dashboard",
+    "soc"
+  ],
+  "author": "Cybersecurity Research Student",
+  "license": "MIT"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ddos-dashboard-server",
+  "version": "1.0.0",
+  "description": "Backend simulation and detection server for DDoS Dashboard",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node test/detection.test.js && node test/threatScorer.test.js && node test/mitigation.test.js && node test/incidentAndEvaluation.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "keywords": [
+    "express",
+    "ddos-detection",
+    "simulation"
+  ],
+  "author": "Cybersecurity Research Student",
+  "license": "MIT"
+}
